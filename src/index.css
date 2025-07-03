@@ -13,6 +13,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* * { border: 1px solid red; }
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  font-family: "EB Garamond", serif;
+  margin: auto;
+  text-align: center;
+} */
+/* 
 a {
   font-weight: 500;
   color: #646cff;
@@ -65,4 +75,4 @@ button:focus-visible {
   button {
     background-color: #f9f9f9;
   }
-}
+} */
