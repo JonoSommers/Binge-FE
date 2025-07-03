@@ -1,9 +1,15 @@
-import LandingPage from "./LandingPage/Components/LandingPage.jsx"
+import LandingPage from "./components/LandingPage.jsx"
+import Navbar from "./components/Navbar.jsx"
+import { Routes, Route } from "react-router-dom"
 
-function App() {
+export default function App() {
   return (
-    <LandingPage />
+    <section className="app-container">
+      <Navbar />
+
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+      </Routes>
+    </section>
   )
 }
-
-export default App

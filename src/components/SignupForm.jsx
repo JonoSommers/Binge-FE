@@ -1,20 +1,16 @@
 import { useState } from "react"
-import "../Styling/LoginForm.css"
 
-export default function LoginForm() {
+export default function SignupForm() {
   const [username, setUsername] = useState('')
   const [password, setPassword] = useState('')
-
-  function handleInput(event) {
-    setUsername(event.target.closest)
-  }
-
+  const [confirmPassword, setConfirmPassword] = useState('')
+  
   return (
-    <form className="login-form">
+    <form className="signup-form">
       <label>
         Username: 
         <input
-          className="login-username"
+          className="signup-username"
           type="text"
           placeholder="Enter Username..."
           value={username}
@@ -24,11 +20,21 @@ export default function LoginForm() {
       <label>
         Password: 
         <input
-          className="login-password"
+          className="signup-password"
           type="password"
           placeholder="Enter password..."
           value={password}
           onChange={(event) => setPassword(event.target.value)}
+        />
+      </label>
+      <label>
+        Confirm Password: 
+        <input
+          className="signup-confirm-password"
+          type="password"
+          placeholder="Confirm password..."
+          value={confirmPassword}
+          onChange={(event) => setConfirmPassword(event.target.value)}
         />
       </label>
     </form>

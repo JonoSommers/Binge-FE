@@ -1,11 +1,10 @@
-import LandingPageImage from "./LandingPageImage.jsx"
 import LoginForm from "./LoginForm.jsx"
 
 export default function LandingPage() {
   return (
-    <>
-      <LandingPageImage />
+    <section className="login-form-container">
+      <div className="landing-page-divider"></div>
       <LoginForm />
-    </>
+    </section>
   )
 }
